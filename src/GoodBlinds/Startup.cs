@@ -54,7 +54,7 @@ namespace GoodBlinds
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/Жалюзи/Error");
             }
 
             app.UseApplicationInsightsExceptionTelemetry();
@@ -65,7 +65,7 @@ namespace GoodBlinds
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Жалюзи}/{action=Index}/{id?}");
             });
         }
     }

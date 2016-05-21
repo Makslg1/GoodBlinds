@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - GoodBlinds</title>
+    <title>@ViewData["Title"] ХорошиеЖалюзи.рф</title>
 
     <environment names="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -24,22 +24,24 @@
 <body>
 
     <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
-        <a asp-controller="Home" asp-action="Index" class="navbar-brand">GoodBlinds</a>
+        <a asp-controller="Жалюзи" asp-action="Index" class="navbar-brand">
+            <img src="~/images/1_Primary_logo_on_transparent.png" class="hidden-sm hidden-xs" /></a>
         <ul class="nav navmenu-nav">
-            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-            <li><a asp-controller="Home" asp-action="About">About</a></li>
-            <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
+            <li><a asp-controller="Жалюзи" asp-action="Index">Главная</a></li>
+            <li><a asp-controller="Жалюзи" asp-action="About">About</a></li>
+            <li><a asp-controller="Жалюзи" asp-action="Contact">Contact</a></li>
         </ul>
     </div>
     <div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
-        <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+        <button type="button" class="navbar-toggle " data-toggle="offcanvas" data-target=".navmenu">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a asp-controller="Home" asp-action="Index" class="navbar-brand">GoodBlinds</a>
+        <a asp-controller="Жалюзи" asp-action="Index" class="navbar-brand"> 
+            <img src="~/images/1_Primary_logo_on_transparent.png" /></a>
     </div>
-
+    
 
     <div class="container-fluid body-content">
         @RenderBody()
